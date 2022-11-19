@@ -21,11 +21,6 @@ const fileErrorRotateTransport = new transports.DailyRotateFile({
   level: 'error'
 });
 
-// // eslint-disable-next-line no-shadow
-// const customFormat = prettyPrint(({ level, message, method = '', label, timestamp }) => {
-//   return `${timestamp} : ${label} : ${level} : ${message} : ${method}`;
-// });
-
 const logger = createLogger({
   level: 'debug',
   format: combine(
